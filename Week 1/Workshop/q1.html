@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCK Survey</title>
+</head>
+<style>
+    body
+    {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    h1{
+        color: green;
+    }
+    .full
+    {
+        border: solid;
+        padding-left: 10px;
+    }
+    #btn{
+        padding-bottom: 10px;
+    }
+    </style>
+<h1>Herald College Kathmandu Survey Form</h1>
+<body>
+    <div class="full">
+        <h3>Name</h3>
+        <input id="name" type="text" name="name" placeholder="Enter Your Name">
+
+        <h3>Email</h3>
+        <input id="userEmail" type="text" name="email" placeholder="Enter Your Email Address">
+
+        <h3>Age</h3>
+        <input id="age" type="number" name="age" placeholder="Enter Your Age">
+
+        <h3>Which Option Describes You?</h3>
+        <select>
+            <option>Student</option>
+            <option>Teacher</option>
+            <option>Staffs</option>
+        </select>
+
+        <h3>Would You Recommend Herald College Kathmandu To A Friend</h3>
+        <div>
+            <label><input type="radio" name="choice" value="yes">Yes</label><br> 
+            <label><input type="radio" name="choice" value="No">No</label><br> 
+            <label><input type="radio" name="choice" value="both">Maybe</label><br> 
+        </div>
+
+        <h3>Languages And Framework Known (Check All That Apply)</h3>
+        <div>
+            <label><input type="checkbox" name="choice" value="C">C</label><br>
+            <label><input type="checkbox" name="choice" value="C++">C++</label><br>
+            <label><input type="checkbox" name="choice" value="C#">C#</label><br>
+            <label><input type="checkbox" name="choice" value="Java">Java</label><br>
+            <label><input type="checkbox" name="choice" value="Python">Python</label><br>
+            <label><input type="checkbox" name="choice" value="JavaScript">JavaScript</label><br>
+            <label><input type="checkbox" name="choice" value="React">React</label><br>
+            <label><input type="checkbox" name="choice" value="Angular">Angular</label><br>
+            <label><input type="checkbox" name="choice" value="Djanjo">Djanjo</label><br>
+            <label><input type="checkbox" name="choice" value="Spring">Spring</label><br>
+        </div>
+     
+        <h3>Any Comments Or Suggestions</h3>
+        <textarea id ="userComment" rows="3" cols="50" name="comment"> </textarea><br><br>
+
+        <div id="btn">
+            <input type="button" onclick="myFunction()" value="Submit">
+        </div>
+        
+    </div>
+</body>
+</html>
